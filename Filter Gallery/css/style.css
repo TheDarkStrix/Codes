@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial",sans-serif;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6em;
+}
+
+a{
+    color:#666;
+    text-decoration: none;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+header{
+    background: #333;
+    min-height: 55px; 
+    color:white
+
+}
+
+header a{
+    color:white;
+}
+
+.logo{
+    float: left;
+    width: 30%;
+    margin-top: 15px;
+}
+nav{
+    float: right;
+    width: 70%;
+}
+
+nav ul{
+    float: right;
+}
+
+nav li{
+    list-style: none;
+    float: left;
+    padding: 0px 10px;
+}
+
+nav a{
+    color:white;
+    padding-bottom: 5px;
+}
+
+nav li.current a,nav a:hover{
+    color:#03899c;
+    border-bottom: #03899c solid 3px;
+}
+
+section{
+    padding: 20px ;
+    overflow: hidden;
+}
+
+.tagline{
+    background: #03899c;
+    color:white;
+    }
+    .tagline h1{
+        text-align: center;
+        font-size: 35px;
+    }
+    
+#gallery{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#gallery li{
+    display: block;
+    float: left;
+    width: 23%;
+    cursor: pointer;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 12px 7px 0;
+    position: relative;
+}
+
+#gallery img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer{
+    background: #03899c;
+    color: white;
+    height: 55px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*Overlay*/
+
+.overlay{
+    display: none;
+    background: #03899c ;
+    position: absolute;
+    color:#fff;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    pointer-events: none;
+    text-align: center;
+}
+
+.overlay h3{
+    margin: 0;
+    padding: 0;
+}
