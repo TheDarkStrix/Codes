@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Search Vidz</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="jquery.fancybox.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <script src="jquery.fancybox.pack.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.fancybox').fancybox();
+            });
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="container">
+            <header>
+                <h1>Search <span>Vidz</span></h1>
+                <p>Search all youtube videos</p>
+            </header>
+            <section>
+                <form action="" name="search-form" id="search-form" onsubmit="return search()">
+                    <div class="fieldcontainer">
+                        <input type="search" id="query" class="search-field" placeholder="Search Youtube ...">
+                        <input type="submit" name="search-btn" id="search-btn" value="">
+                    </div>
+                </form>
+                <ul id="results"></ul>
+                <div id="buttons"></div>
+                <footer>
+                    <p>Copyright &copy; 2016, All Rights Reserved</p>
+                </footer>
+            </section>
+        </div>
+    </body>
+</html>
